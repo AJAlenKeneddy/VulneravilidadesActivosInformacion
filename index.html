@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Innovations - Activos y Vulnerabilidades</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px;
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 40px 0;
+            color: #495057;
+        }
+
+        .modal-header {
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        .btn-dark {
+            background-color: #343a40;
+            border: none;
+        }
+
+            .btn-dark:hover {
+                background-color: #495057;
+            }
+
+        footer {
+            background-color: #f4f4f9;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+            footer p {
+                margin: 0;
+                color: #333;
+            }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Tech Innovations</h1>
+        <p>Identificación de Activos de Información y sus Vulnerabilidades</p>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">Activos de Información</h2>
+
+        <ul class="list-group">
+            <li class="list-group-item">
+                <strong>Datos de clientes (CRM - Customer Relationship Management)</strong>
+                <button type="button" class="btn btn-dark btn-sm float-end" data-bs-toggle="modal"
+                        data-bs-target="#crmModal">
+                    Ver Vulnerabilidades
+                </button>
+            </li>
+            <li class="list-group-item">
+                <strong>Propiedad intelectual (código fuente del software)</strong>
+                <button type="button" class="btn btn-dark btn-sm float-end" data-bs-toggle="modal"
+                        data-bs-target="#codigoModal">
+                    Ver Vulnerabilidades
+                </button>
+            </li>
+            <li class="list-group-item">
+                <strong>Infraestructura en la nube (servidores y bases de datos)</strong>
+                <button type="button" class="btn btn-dark btn-sm float-end" data-bs-toggle="modal"
+                        data-bs-target="#nubeModal">
+                    Ver Vulnerabilidades
+                </button>
+            </li>
+            <li class="list-group-item">
+                <strong>Sistema de correos electrónicos corporativos</strong>
+                <button type="button" class="btn btn-dark btn-sm float-end" data-bs-toggle="modal"
+                        data-bs-target="#correosModal">
+                    Ver Vulnerabilidades
+                </button>
+            </li>
+            <li class="list-group-item">
+                <strong>Información financiera (ERP - Enterprise Resource Planning)</strong>
+                <button type="button" class="btn btn-dark btn-sm float-end" data-bs-toggle="modal"
+                        data-bs-target="#erpModal">
+                    Ver Vulnerabilidades
+                </button>
+            </li>
+            <li class="list-group-item">
+                <strong>Red corporativa interna</strong>
+                <button type="button" class="btn btn-dark btn-sm float-end" data-bs-toggle="modal"
+                        data-bs-target="#redModal">
+                    Ver Vulnerabilidades
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Modales -->
+    <!-- CRM Modal -->
+    <div class="modal fade" id="crmModal" tabindex="-1" aria-labelledby="crmModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="crmModalLabel">Vulnerabilidades - Datos de Clientes (CRM)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><strong>Acceso no autorizado:</strong> Si no se implementan correctamente los controles de acceso y las políticas de contraseñas seguras, alguien podría obtener acceso indebido a la información de los clientes.</li>
+                        <li><strong>Robo de datos:</strong> Un ciberataque dirigido (phishing, malware) podría comprometer la base de datos y robar información personal y financiera de los clientes.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Código Fuente Modal -->
+    <div class="modal fade" id="codigoModal" tabindex="-1" aria-labelledby="codigoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="codigoModalLabel">Vulnerabilidades - Propiedad Intelectual (Código Fuente)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><strong>Filtraciones por empleados:</strong> Un empleado malintencionado o descuidado podría copiar o filtrar el código a competidores o publicarlo de manera no autorizada.</li>
+                        <li><strong>Fallas en el control de versiones:</strong> Si no se gestionan correctamente los permisos en los repositorios, se podrían realizar cambios o borrados no autorizados en el código fuente.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Infraestructura en la nube Modal -->
+    <div class="modal fade" id="nubeModal" tabindex="-1" aria-labelledby="nubeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="nubeModalLabel">Vulnerabilidades - Infraestructura en la nube</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><strong>Exposición de puertos y servicios:</strong> Si los servicios en la nube no están configurados correctamente, podría haber vulnerabilidades en puertos abiertos o servicios expuestos a internet, facilitando ataques como el de denegación de servicio (DDoS).</li>
+                        <li><strong>Falta de cifrado de datos:</strong> Si no se implementa el cifrado en tránsito y en reposo, los datos podrían ser interceptados o comprometidos durante su almacenamiento o transferencia.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Correos Electrónicos Modal -->
+    <div class="modal fade" id="correosModal" tabindex="-1" aria-labelledby="correosModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="correosModalLabel">Vulnerabilidades - Sistema de correos electrónicos corporativos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><strong>Phishing:</strong> Los empleados podrían ser víctimas de correos electrónicos maliciosos que intentan robar credenciales o instalar malware en los sistemas.</li>
+                        <li><strong>Falta de autenticación de dos factores (2FA):</strong> Si no se implementa la autenticación adicional, las cuentas de correo podrían ser vulnerables a ataques de fuerza bruta o robo de contraseñas.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ERP Modal -->
+    <div class="modal fade" id="erpModal" tabindex="-1" aria-labelledby="erpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="erpModalLabel">Vulnerabilidades - Información Financiera (ERP)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><strong>Acceso no controlado a los módulos financieros:</strong> Si no se aplican correctamente los permisos y roles, usuarios no autorizados podrían acceder y modificar información financiera crítica.</li>
+                        <li><strong>Errores en la configuración:</strong> Una mala configuración del sistema ERP podría generar pérdidas financieras o desajustes en la contabilidad.</li>
+                        <li><strong>Integridad de datos:</strong> Si se producen inconsistencias en los datos, como fallos en la sincronización, podría haber problemas graves en la toma de decisiones financieras.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Red Interna Modal -->
+    <div class="modal fade" id="redModal" tabindex="-1" aria-labelledby="redModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="redModalLabel">Vulnerabilidades - Red Corporativa Interna</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><strong>Acceso no autorizado:</strong> Dispositivos conectados a la red que no están correctamente autenticados pueden comprometer la seguridad interna.</li>
+                        <li><strong>Ataques internos:</strong> Empleados o intrusos con acceso físico a la red podrían ejecutar ataques de sniffing o interceptación de datos sensibles.</li>
+                        <li><strong>Falta de segmentación de la red:</strong> Si la red no está correctamente segmentada, un ataque exitoso en un segmento podría comprometer la seguridad de toda la red.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+    <footer class="text-center mt-4">
+        <p>&copy; 2024 AJAlenKeneddy. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
